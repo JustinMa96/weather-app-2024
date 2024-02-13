@@ -33,6 +33,8 @@ const WeatherIcon: FC<WeatherIconProps> = ({ weatherType }) => {
         return showerRainIcon;
       case 'rain':
         return rainIcon;
+      case 'light rain':
+        return rainIcon;
       case 'thunderstorm':
         return thunderstormIcon;
       case 'snow':
