@@ -12,7 +12,7 @@ const TomorrowForecast: FC<TomorrowForecastProps> = ({ forecastData }) => {
   return (
     <div className="bg-gray-200 p-4 rounded-md shadow-md m-10">
       <h3 className="text-gray-800 font-medium mb-2">Tomorrow's Forecast</h3>
-      <div className='flex flex-col-6 justify-between item-center text-center'>
+      <div className='flex flex-col-6 justify-between text-center'>
       {tomorrowForecast.map((data, index) => (
         <div key={index} className="mb-2">
           <p>{new Date(data.dt * 1000).toLocaleTimeString('en-US', { hour: 'numeric', minute: '2-digit' })}</p>          
